@@ -54,7 +54,7 @@ const quizData = {
 ### Steps to Add a Quiz:
 - **Change Quiz Name and Description**: Update the `quiz_name` and `quiz_description` fields to reflect the new quiz topic.
 - **Add Questions**: Add new question objects to the questions array. Each question should include:
-_ **id**: A unique identifier for the question.
+  - **id**: A unique identifier for the question.
 -- **question**: The question text.
 -- **options**: An array of answer options, each with an id and answer text.
 -- **correct_answer**: An array of correct answer IDs.
