@@ -55,12 +55,12 @@ const quizData = {
 - **Change Quiz Name and Description**: Update the `quiz_name` and `quiz_description` fields to reflect the new quiz topic.
 - **Add Questions**: Add new question objects to the questions array. Each question should include:
   - **id**: A unique identifier for the question.
--- **question**: The question text.
--- **options**: An array of answer options, each with an id and answer text.
--- **correct_answer**: An array of correct answer IDs.
--- **explanation**: An explanation for the correct answer.
--- **points**: The number of points the question is worth.
--- **img_question and img_explanation**: Optional image paths for the question and explanation.
+  - **question**: The question text.
+  - **options**: An array of answer options, each with an id and answer text.
+  - **correct_answer**: An array of correct answer IDs.
+  - **explanation**: An explanation for the correct answer.
+  - **points**: The number of points the question is worth.
+  - **img_question and img_explanation**: Optional image paths for the question and explanation.
 - **Update Settings**: Modify the settings object to customize the quiz behavior, such as randomizing questions, setting a time limit, or changing the passing score.
 - **Update questions-count**: Ensure the questions-count property matches the total number of questions in the questions array.
 
