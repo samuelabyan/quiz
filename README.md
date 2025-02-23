@@ -1,5 +1,5 @@
 # Quiz Web App
-This is a simple web-based quiz application designed to test users' knowledge on various topics. The app is built using HTML, CSS, and JavaScript, and it allows users to answer multiple-choice questions, view their progress, and receive feedback on their performance. [View live demo](https://samuelabyan.github.io/quiz/)
+This is a simple web-based quiz application designed to test users' knowledge on various topics. The app is built using HTML, CSS, and JavaScript, and it allows users to answer multiple-choice questions, view their progress, and receive feedback on their performance. [View live demo](https://samuelabyan.github.io/quiz/).
 
 ## Features
 - **Interactive Quiz Interface**: Users can answer questions, view explanations, and see their score in real-time.
