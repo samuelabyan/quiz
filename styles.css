@@ -1,0 +1,209 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #fbf5ef;
+  color: #612b08; /* Dark brown */
+}
+
+.quiz-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+}
+
+#timer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: bold;
+}
+
+#score {
+  margin-bottom: 20px;
+}
+
+#question-container, #feedback-container, #results-container {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.notification {
+  position: fixed;
+  top: -50px; /* Start off-screen */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #dc5a43;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: top 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.notification.show {
+  top: 10px; /* Slide into view */
+}
+
+.home-container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+#quiz-list button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#quiz-history {
+  margin-top: 20px;
+}
+
+#history-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#history-list li {
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+
+/* Hide the default radio button */
+.radio {
+  display: none;
+}
+
+/* Custom radio label styling */
+.radio-label {
+  display: block;
+  padding: 15px;
+  background-color: #e78c4e;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  position: relative;
+  margin-top: 10px;
+}
+
+/* Hover effect */
+.radio-label:hover {
+  background-color: #d77d41;
+}
+
+/* Checked state styling */
+.radio:checked + .radio-label {
+  background-color: #3e996f;
+  color: #ffffff;
+}
+
+/* Add a checkmark for the selected option */
+.radio:checked + .radio-label::after {
+  content: '✔';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Button Styling and Animation*/
+button {
+  background-color: #f8e5cf; /* Light beige */
+  color: #612b08; /* Dark brown */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Icon Styling */
+button .icon {
+  font-size: 22px;
+  margin-left: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+button:hover {
+  background-color: #e6c9a5; /* Slightly darker beige */
+  transform: translateY(-2px);
+}
+
+/* Move the icon on hover */
+button:hover .icon {
+  transform: translateX(5px);
+}
+
+/* Active Click Effect */
+button:active {
+  transform: scale(0.98);
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 1px solid #f8e5cf;
+}
+
+#progress-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+#progress-bar {
+  height: 10px;
+  background-color: #3e996f;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+#progress-text {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #612b08;
+  text-align: center;
+}

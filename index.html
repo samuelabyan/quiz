@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h3 id="quiz-name"></h3>
+    <p id="quiz-description"style="display:none"></p>
+    <div id="timer"></div>
+	    <div id="score">Score: 0</div>
+	<hr class="solid">
+	
+	<div id="progress-container">
+  <div id="progress-bar"></div>
+  <p id="progress-text">0/4</p>
+</div>
+
+    <div id="question-container">
+      <h2 id="question"></h2>
+      <img id="question-image" src="" alt="" style="display: none;">
+      <form id="options-form"></form>
+      <button id="submit-btn">Submit</button>
+    </div>
+    <div id="feedback-container" style="display: none;">
+      <p id="feedback"></p>
+      <p id="explanation"></p>
+      <img id="explanation-image" src="" alt="" style="display: none;">
+      <button id="next-btn">Next Question <span class="icon">›</span></button>
+    </div>
+    <div id="results-container" style="display: none;">
+      <h2>Quiz Results</h2>
+      <p id="final-score"></p>
+      <p id="pass-fail"></p>
+	  <button id="retry-btn">Retry</button>
+    </div>
+  </div>
+  <script src="quiz-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
