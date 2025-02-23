@@ -17,7 +17,7 @@ This is a simple web-based quiz application designed to test users' knowledge on
 ### Adding a New Quiz
 To add a new quiz, you need to modify the quiz-data.js file. This file contains all the quiz data, including questions, options, correct answers, and settings.
 Example Quiz Data Structure:
-'
+'''
 const quizData = {
   "quiz_name": "Traffic Rules Knowledge Quiz", // Name of the quiz
   "quiz_description": "Assess your knowledge of traffic rules.", // Description of the quiz
@@ -49,4 +49,4 @@ const quizData = {
     // Add more questions here
   ]
 };
-'
+'''
