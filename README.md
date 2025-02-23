@@ -17,7 +17,7 @@ This is a simple web-based quiz application designed to test users' knowledge on
 ### Adding a New Quiz
 To add a new quiz, you need to modify the quiz-data.js file. This file contains all the quiz data, including questions, options, correct answers, and settings.
 Example Quiz Data Structure:
-'''
+```
 const quizData = {
   "quiz_name": "Traffic Rules Knowledge Quiz", // Name of the quiz
   "quiz_description": "Assess your knowledge of traffic rules.", // Description of the quiz
@@ -49,4 +49,21 @@ const quizData = {
     // Add more questions here
   ]
 };
-'''
+```
+
+### Steps to Add a Quiz:
+- **Change Quiz Name and Description**: Update the `quiz_name` and `quiz_description` fields to reflect the new quiz topic.
+- **Add Questions**: Add new question objects to the questions array. Each question should include:
+-- **id**: A unique identifier for the question.
+-- **question**: The question text.
+-- **options**: An array of answer options, each with an id and answer text.
+-- **correct_answer**: An array of correct answer IDs.
+-- **explanation**: An explanation for the correct answer.
+-- **points**: The number of points the question is worth.
+-- **img_question and img_explanation**: Optional image paths for the question and explanation.
+- **Update Settings**: Modify the settings object to customize the quiz behavior, such as randomizing questions, setting a time limit, or changing the passing score.
+- **Update questions-count**: Ensure the questions-count property matches the total number of questions in the questions array.
+
+### Modifying an Existing Quiz
+To modify an existing quiz, simply edit the properties in the quiz-data.js file.
+You can change the quiz name, description, questions, options, correct answers, or settings as needed.
